@@ -2,7 +2,7 @@
 
 ### Build image
 
-`docker build --build-arg wolframId=<wolfram account email> wolframPass=<wolfram account password> -t hyperion . `
+`docker build --build-arg wolframId=<wolfram account email> --build-arg wolframPass=<wolfram account password> -t hyperion . `
 
 ### Running image
 
