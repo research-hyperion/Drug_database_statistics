@@ -35,8 +35,7 @@ RUN rm DrugBank_statistics.zip
 
 
 # Run execute_script
-RUN chmod +x execute_ipynb.sh
-RUN ./execute_ipynb.sh
+RUN chmod +x execute_scripts.sh
 
 
 
