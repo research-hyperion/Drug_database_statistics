@@ -34,7 +34,7 @@ find . -maxdepth 1 -mindepth 1 -type d | while read dir; do
 	    if [ -f "${file}" ]; then
 	        echo "PYTHON FILE:$file";
 		echo "Start execution of $file [$(date +"%T")]"
-		python $file
+#		python $file
 	    fi
 	done
 
