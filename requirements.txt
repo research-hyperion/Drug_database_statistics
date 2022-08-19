@@ -5,3 +5,4 @@ powerlaw
 scipy
 pandas
 tqdm
+jupyter
