@@ -23,16 +23,8 @@ RUN /usr/bin/wolframscript -username $wolframId -password $wolframPass -version
 # copy all files into image
 COPY . .
 
-# Concatenate zip files
-RUN cat DrugBank_statistics.zip.* > DrugBank_statistics.zip
-
-RUN rm DrugBank_statistics.zip.*
-
 # Unzip files
 RUN unzip DrugBank_statistics.zip
-
-RUN rm DrugBank_statistics.zip
-
 
 # Run execute_script
 RUN chmod +x execute_scripts.sh
