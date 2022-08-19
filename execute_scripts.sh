@@ -34,6 +34,7 @@ find . -maxdepth 1 -mindepth 1 -type d | while read dir; do
 	
 	if [ "$RUN_ONLY_IPYNB" = "true" ] || [ "$RUN_ONLY_SCRIPTS" = "true" ] ; then
 	    echo "Executing ipynb files..."
+
             if [[ -f "$PARSE_DRUGBANK" ]]; then	
 	            echo "$PARSE_DRUGBANK exists in $dir"
 		    echo "Start execution of $PARSE_DRUGBANK [$(date +"%T")]"
